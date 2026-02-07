@@ -19,45 +19,106 @@
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
   </head>
-  <body>
+    <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Matvey Smirnov</a>
+      <a class="navbar-brand" href="index.html"
+         data-i18n
+         data-en="Matvey Smirnov"
+         data-ru="Матвей Смирнов">
+        Matvey Smirnov
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="about.html"
+               data-i18n
+               data-en="About"
+               data-ru="Обо мне">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="projects.html"
+               data-i18n
+               data-en="Projects"
+               data-ru="Проекты">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="contact.html"
+               data-i18n
+               data-en="Contact"
+               data-ru="Контакты">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <button id="lang-toggle"
+                    class="btn btn-sm btn-outline-light ml-2"
+                    type="button">
+              RU
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
 
     <!-- Resume -->
     <header class="jumbotron text-center mb-0">
-    <h1 class="display-4">Hi, I’m Matvey Smirnov</h1>
-    <p class="lead">
+      <h1 class="display-4"
+          data-i18n
+          data-en="Hi, I’m Matvey Smirnov"
+          data-ru="Привет, я Матвей Смирнов">
+        Hi, I’m Matvey Smirnov
+      </h1>
+      <p class="lead"
+         data-i18n
+         data-en="Junior Backend Developer · Python · SQL · C · JS · CS50x student"
+         data-ru="Начинающий backend‑разработчик · Python · SQL · C · JS">
         Junior Backend Developer · Python · SQL · CS50x student
-    </p>
-    <div class="mb-3">
-        <a href="projects.html" class="btn btn-primary btn-lg mr-2">View projects</a>
-        <a href="contact.html" class="btn btn-outline-light btn-lg">Contact me</a>
-    </div>
-    <button id="greet-btn" class="btn btn-sm btn-light">
+      </p>
+      <div class="mb-3">
+        <a href="projects.html"
+           class="btn btn-primary btn-lg mr-2"
+           data-i18n
+           data-en="View projects"
+           data-ru="Посмотреть проекты">
+          View projects
+        </a>
+        <a href="contact.html"
+           class="btn btn-outline-light btn-lg"
+           data-i18n
+           data-en="Contact me"
+           data-ru="Связаться со мной">
+          Contact me
+        </a>
+      </div>
+      <button id="greet-btn" class="btn btn-sm btn-light"
+              data-i18n
+              data-en="Personal greeting"
+              data-ru="Личное приветствие">
         Personal greeting
-    </button>
+      </button>
     </header>
 
     <!-- Briefly about myself -->
     <main class="container my-4">
       <section class="mb-4">
-        <h2>What I do</h2>
-        <p>
-          I’m an aspiring backend developer focused on Python, web backends,
-          and SQL. I enjoy building small services, bots, and solving CS50
-          problem sets.
+        <h2 data-i18n data-en="What I do" data-ru="Чем я занимаюсь">
+          What I do
+        </h2>
+        <p data-i18n
+           data-en="I’m an aspiring backend developer focused on Python, web backends, and SQL. I enjoy building small services and solving CS50 problem sets."
+           data-ru="Я начинающий backend‑разработчик, фокусируюсь на Python, серверной разработке и SQL. Мне нравится делать небольшие сервисы и решать задачи из CS50.">
+          I’m an aspiring backend developer focused on Python, web backends, and SQL. I enjoy building small services and solving CS50 problem sets.
         </p>
       </section>
 
@@ -65,11 +126,28 @@
         <div class="col-md-4 mb-3">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">Tech stack</h3>
+              <h3 class="card-title"
+                  data-i18n
+                  data-en="Tech stack"
+                  data-ru="Технологии">
+                Tech stack
+              </h3>
               <ul>
-                <li>Python, Flask/FastAPI (начальный уровень)</li>
-                <li>SQL, PostgreSQL</li>
-                <li>Git, GitHub, Linux basics</li>
+                <li data-i18n
+                    data-en="Python, Flask/FastAPI"
+                    data-ru="Python, Flask/FastAPI">
+                  Python, Flask/FastAPI (basic level)
+                </li>
+                <li data-i18n
+                    data-en="SQL, PostgreSQL, Docker"
+                    data-ru="SQL, PostgreSQL, Docker">
+                  SQL, PostgreSQL
+                </li>
+                <li data-i18n
+                    data-en="Git, GitHub, Linux basics"
+                    data-ru="Git, GitHub, основы Linux">
+                  Git, GitHub, Linux basics
+                </li>
               </ul>
             </div>
           </div>
@@ -77,11 +155,28 @@
         <div class="col-md-4 mb-3">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">Strengths</h3>
+              <h3 class="card-title"
+                  data-i18n
+                  data-en="Strengths"
+                  data-ru="Сильные стороны">
+                Strengths
+              </h3>
               <ul>
-                <li>I learn fast and like to understand the details</li>
-                <li>Course experience CS50/CS50P</li>
-                <li>I have a neat and clear code</li>
+                <li data-i18n
+                    data-en="I learn fast and like to understand the details"
+                    data-ru="Быстро учусь и люблю разбираться в деталях">
+                  I learn fast and like to understand the details
+                </li>
+                <li data-i18n
+                    data-en="Course experience: CS50 / CS50P"
+                    data-ru="Опыт курсов: CS50 / CS50P">
+                  Course experience: CS50 / CS50P
+                </li>
+                <li data-i18n
+                    data-en="I write neat and clear code"
+                    data-ru="Пишу аккуратный и понятный код">
+                  I write neat and clear code
+                </li>
               </ul>
             </div>
           </div>
@@ -89,11 +184,28 @@
         <div class="col-md-4 mb-3">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">Languages</h3>
+              <h3 class="card-title"
+                  data-i18n
+                  data-en="Languages"
+                  data-ru="Языки">
+                Languages
+              </h3>
               <ul>
-                <li>Russian – native</li>
-                <li>English – C1</li>
-                <li>Chinese – HSK3</li>
+                <li data-i18n
+                    data-en="Russian – native"
+                    data-ru="Русский – родной">
+                  Russian – native
+                </li>
+                <li data-i18n
+                    data-en="English – C1"
+                    data-ru="Английский – C1">
+                  English – C1
+                </li>
+                <li data-i18n
+                    data-en="Chinese – HSK3"
+                    data-ru="Китайский – HSK3">
+                  Chinese – HSK3
+                </li>
               </ul>
             </div>
           </div>
