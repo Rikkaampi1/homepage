@@ -20,25 +20,70 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Navbar такой же, как в index.html -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Matvey Smirnov</a>
+      <a class="navbar-brand"
+         href="index.html"
+         data-i18n
+         data-en="Matvey Smirnov"
+         data-ru="Матвей Смирнов">
+        Matvey Smirnov
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="about.html"
+               data-i18n
+               data-en="About"
+               data-ru="Обо мне">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="projects.html"
+               data-i18n
+               data-en="Projects"
+               data-ru="Проекты">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"
+               href="contact.html"
+               data-i18n
+               data-en="Contact"
+               data-ru="Контакты">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <button id="lang-toggle"
+                    class="btn btn-sm btn-outline-light ml-2"
+                    type="button">
+              RU
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
 
     <!-- Jumbotron -->
     <header class="jumbotron text-center mb-0">
-      <h1 class="display-4">Let’s get in touch</h1>
-      <p class="lead">
+      <h1 class="display-4"
+          data-i18n
+          data-en="Let’s get in touch"
+          data-ru="Давайте свяжемся">
+        Let’s get in touch
+      </h1>
+      <p class="lead"
+         data-i18n
+         data-en="Open to internships, junior backend roles, and interesting projects."
+         data-ru="Открыт к стажировкам, позициям junior backend‑разработчика и интересным проектам.">
         Open to internships, junior backend roles, and interesting projects.
       </p>
     </header>
@@ -50,15 +95,35 @@
         <div class="col-md-4 mb-3">
           <section class="h-100 d-flex flex-column justify-content-between">
             <div>
-              <h2>Contact details</h2>
-              <p>If you prefer, you can contact me directly:</p>
+              <h2 data-i18n
+                  data-en="Contact details"
+                  data-ru="Контактные данные">
+                Contact details
+              </h2>
+              <p data-i18n
+                 data-en="If you prefer, you can contact me directly:"
+                 data-ru="Если удобнее, вы можете написать мне напрямую:">
+                If you prefer, you can contact me directly:
+              </p>
               <ul class="list-unstyled">
-                <li><strong>Email:</strong> <a>smirnov.matvey08@gmail.com</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/Rikkaampi1" target="_blank">https://github.com/Rikkaampi1</a></li>
-                <li><strong>Telegram:</strong> <a href="https://t.me/Rikkaampii" target="_blank">https://t.me/Rikkaampii</a></li>
+                <li>
+                  <strong data-i18n data-en="Email:" data-ru="Email:">Email:</strong>
+                  <a href="mailto:smirnov.matvey08@gmail.com">smirnov.matvey08@gmail.com</a>
+                </li>
+                <li>
+                  <strong data-i18n data-en="GitHub:" data-ru="GitHub:">GitHub:</strong>
+                  <a href="https://github.com/Rikkaampi1" target="_blank">https://github.com/Rikkaampi1</a>
+                </li>
+                <li>
+                  <strong data-i18n data-en="Telegram:" data-ru="Telegram:">Telegram:</strong>
+                  <a href="https://t.me/Rikkaampii" target="_blank">https://t.me/Rikkaampii</a>
+                </li>
               </ul>
             </div>
-            <small class="text-muted mt-3">
+            <small class="text-muted mt-3"
+                   data-i18n
+                   data-en="I usually reply within 1–2 days."
+                   data-ru="Обычно отвечаю в течение 1–2 дней.">
               I usually reply within 1–2 days.
             </small>
           </section>
@@ -68,35 +133,71 @@
         <div class="col-md-8 mb-3">
           <div class="card shadow-sm">
             <div class="card-body">
-              <h2 class="card-title">Send me a message</h2>
-              <p class="card-text">
+              <h2 class="card-title"
+                  data-i18n
+                  data-en="Send me a message"
+                  data-ru="Напишите мне сообщение">
+                Send me a message
+              </h2>
+              <p class="card-text"
+                 data-i18n
+                 data-en="Tell me briefly who you are and what you’d like to discuss."
+                 data-ru="Кратко расскажите, кто вы и по какому поводу хотите связаться.">
                 Tell me briefly who you are and what you’d like to discuss.
               </p>
 
               <form id="contact-form">
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="name">Name</label>
-                    <input class="form-control" id="name" type="text" placeholder="Your name" required>
+                    <label for="name"
+                           data-i18n
+                           data-en="Name"
+                           data-ru="Имя">
+                      Name
+                    </label>
+                    <input class="form-control" id="name" type="text"
+                           placeholder="Your name" required>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="email">Email</label>
-                    <input class="form-control" id="email" type="email" placeholder="you@example.com" required>
+                    <label for="email"
+                           data-i18n
+                           data-en="Email"
+                           data-ru="Email">
+                      Email
+                    </label>
+                    <input class="form-control" id="email" type="email"
+                           placeholder="you@example.com" required>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input class="form-control" id="subject" type="text" placeholder="Reason for contacting">
+                  <label for="subject"
+                         data-i18n
+                         data-en="Subject"
+                         data-ru="Тема">
+                    Subject
+                  </label>
+                  <input class="form-control" id="subject" type="text"
+                         placeholder="Reason for contacting">
                 </div>
 
                 <div class="form-group">
-                  <label for="message">Message</label>
+                  <label for="message"
+                         data-i18n
+                         data-en="Message"
+                         data-ru="Сообщение">
+                    Message
+                  </label>
                   <textarea class="form-control" id="message" rows="4"
                             placeholder="Shortly describe your request" required></textarea>
                 </div>
 
-                <button class="btn btn-success" type="submit">Send message</button>
+                <button class="btn btn-success" type="submit"
+                        data-i18n
+                        data-en="Send message"
+                        data-ru="Отправить сообщение">
+                  Send message
+                </button>
               </form>
 
               <p id="form-feedback" class="mt-3 text-info"></p>
