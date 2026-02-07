@@ -1,7 +1,8 @@
-<body>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>Matvey Smirnov – Developer</title>
+    <title>About – Matvey Smirnov</title>
 
     <!-- Bootstrap 4.5 -->
     <link rel="stylesheet"
@@ -18,84 +19,175 @@
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
   </head>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Matvey Smirnov</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand"
+         href="index.html"
+         data-i18n
+         data-en="Matvey Smirnov"
+         data-ru="Матвей Смирнов">
+        Matvey Smirnov
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link"
+               href="about.html"
+               data-i18n
+               data-en="About"
+               data-ru="Обо мне">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="projects.html"
+               data-i18n
+               data-en="Projects"
+               data-ru="Проекты">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="contact.html"
+               data-i18n
+               data-en="Contact"
+               data-ru="Контакты">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <button id="lang-toggle"
+                    class="btn btn-sm btn-outline-light ml-2"
+                    type="button">
+              RU
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- Jumbotron-->
-  <header class="jumbotron text-center mb-0">
-    <h1 class="display-4">About me</h1>
-    <p class="lead">
-      Junior backend developer learning Python, JS, C, and modern web technologies.
-    </p>
-  </header>
-
-  <!-- Content -->
-  <main class="container my-4">
-    <section class="mb-4">
-      <h2>Who I am</h2>
-      <p>
-        I am an aspiring backend developer interested in building reliable web services,
-        working with databases, and writing clean, maintainable code.
+    <!-- Jumbotron -->
+    <header class="jumbotron text-center mb-0">
+      <h1 class="display-4"
+          data-i18n
+          data-en="About me"
+          data-ru="Обо мне">
+        About me
+      </h1>
+      <p class="lead"
+         data-i18n
+         data-en="Junior backend developer learning Python, JS, C, and modern web technologies."
+         data-ru="Начинающий backend‑разработчик, изучаю Python, JS, C и современные веб‑технологии.">
+        Junior backend developer learning Python, JS, C, and modern web technologies.
       </p>
-      <p>
-        I enjoy learning by doing: solving CS50 and CS50P problem sets, experimenting
-        with small projects, and reading documentation.
-      </p>
-    </section>
+    </header>
 
-    <section class="mb-4">
-      <h2>Education & courses</h2>
-      <ul>
-        <li>CS50x: Introduction to Computer Science (in progress)</li>
-        <li>CS50P: Introduction to Programming with Python</li>
-        <li>Self‑study: backend development, SQL, Git, Docker</li>
-      </ul>
-    </section>
+    <!-- Content -->
+    <main class="container my-4">
+      <section class="mb-4">
+        <h2 data-i18n
+            data-en="Who I am"
+            data-ru="Кто я">
+          Who I am
+        </h2>
+        <p data-i18n
+           data-en="I am an aspiring backend developer interested in building reliable web services, working with databases, and writing clean, maintainable code."
+           data-ru="Я начинающий backend‑разработчик, мне интересно создавать надёжные веб‑сервисы, работать с базами данных и писать чистый, поддерживаемый код.">
+          I am an aspiring backend developer interested in building reliable web services,
+          working with databases, and writing clean, maintainable code.
+        </p>
+        <p data-i18n
+           data-en="I enjoy learning by doing: solving CS50 and CS50P problem sets, experimenting with small projects, and reading documentation."
+           data-ru="Я учусь через практику: решаю задачи CS50 и CS50P, экспериментирую с небольшими проектами и читаю документацию.">
+          I enjoy learning by doing: solving CS50 and CS50P problem sets, experimenting
+          with small projects, and reading documentation.
+        </p>
+      </section>
 
-    <section>
-      <h2>Skills overview</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Area</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Backend</td>
-            <td>Python, basics of Flask/FastAPI, REST concepts</td>
-          </tr>
-          <tr>
-            <td>Databases</td>
-            <td>SQL, designing simple schemas, writing queries and joins</td>
-          </tr>
-          <tr>
-            <td>Tools</td>
-            <td>Git, GitHub, Linux terminal, VS Code</td>
-          </tr>
-          <tr>
-            <td>Languages</td>
-            <td>Russian (native), English (C1), Chinese (HSK3)</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+      <section class="mb-4">
+        <h2 data-i18n
+            data-en="Education & courses"
+            data-ru="Образование и курсы">
+          Education & courses
+        </h2>
+        <ul>
+          <li data-i18n
+              data-en="CS50x: Introduction to Computer Science (in progress)"
+              data-ru="CS50x: Введение в компьютерные науки (в процессе)">
+            CS50x: Introduction to Computer Science (in progress)
+          </li>
+          <li data-i18n
+              data-en="CS50P: Introduction to Programming with Python"
+              data-ru="CS50P: Введение в программирование на Python">
+            CS50P: Introduction to Programming with Python
+          </li>
+          <li data-i18n
+              data-en="Self‑study: backend development, SQL, Git, Docker"
+              data-ru="Самостоятельное обучение: backend‑разработка, SQL, Git, Docker">
+            Self‑study: backend development, SQL, Git, Docker
+          </li>
+        </ul>
+      </section>
 
-  <footer class="text-center py-3">
-    <small>&copy; 2026 Matvey Smirnov</small>
-  </footer>
-</body>
+      <section>
+        <h2 data-i18n
+            data-en="Skills overview"
+            data-ru="Навыки">
+          Skills overview
+        </h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th data-i18n data-en="Area" data-ru="Область">Area</th>
+              <th data-i18n data-en="Details" data-ru="Подробности">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n data-en="Backend" data-ru="Backend">Backend</td>
+              <td data-i18n
+                  data-en="Python, basics of Flask/FastAPI, REST concepts"
+                  data-ru="Python, основы Flask/FastAPI, базовые концепции REST">
+                Python, basics of Flask/FastAPI, REST concepts
+              </td>
+            </tr>
+            <tr>
+              <td data-i18n data-en="Databases" data-ru="Базы данных">Databases</td>
+              <td data-i18n
+                  data-en="SQL, designing simple schemas, writing queries and joins"
+                  data-ru="SQL, проектирование простых схем, написание запросов и JOIN‑ов">
+                SQL, designing simple schemas, writing queries and joins
+              </td>
+            </tr>
+            <tr>
+              <td data-i18n data-en="Tools" data-ru="Инструменты">Tools</td>
+              <td data-i18n
+                  data-en="Git, GitHub, Linux terminal, VS Code"
+                  data-ru="Git, GitHub, терминал Linux, VS Code">
+                Git, GitHub, Linux terminal, VS Code
+              </td>
+            </tr>
+            <tr>
+              <td data-i18n data-en="Languages" data-ru="Языки">Languages</td>
+              <td data-i18n
+                  data-en="Russian (native), English (C1), Chinese (HSK3)"
+                  data-ru="Русский (родной), английский (C1), китайский (HSK3)">
+                Russian (native), English (C1), Chinese (HSK3)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="text-center py-3">
+      <small>&copy; 2026 Matvey Smirnov</small>
+    </footer>
+  </body>
+</html>
