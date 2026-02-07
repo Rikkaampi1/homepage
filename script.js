@@ -1,5 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // "Personal greeting" button on main page
+  // === Language toggle ===
+  const langToggleBtn = document.querySelector("#lang-toggle");
+  const i18nElements = document.querySelectorAll("[data-i18n]");
+
+  function applyLanguage(lang) {
+    i18nElements.forEach(function (el) {
+      const text = el.getAttribute("data-" + lang);
+      if (text) {
+        el.textContent = text;
+      }
+    });
+
+    if (langToggleBtn) {
+      langToggleBtn.textContent = lang === "en" ? "RU" : "EN";
+    }
+
+    localStorage.setItem("language", lang);
+  }
+
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener("click", function () {
+      const current = localStorage.getItem("language") || "en";
+      const next = current === "en" ? "ru" : "en";
+      applyLanguage(next);
+    });
+  }
+
+  const savedLang = localStorage.getItem("language") || "en";
+  applyLanguage(savedLang);
+
+  // === Personal greeting ===
   const greetBtn = document.querySelector("#greet-btn");
   if (greetBtn) {
     greetBtn.addEventListener("click", function () {
@@ -10,10 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Contact form processing
+  // === Contact form ===
   const contactForm = document.querySelector("#contact-form");
   const feedback = document.querySelector("#form-feedback");
-
   if (contactForm && feedback) {
     contactForm.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -33,8 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
       feedback.classList.remove("text-danger");
       feedback.classList.add("text-success");
       contactForm.reset();
-
-      console.log({ name: name, email: email, message: message });
     });
   }
 });
