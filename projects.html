@@ -22,23 +22,68 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Matvey Smirnov</a>
+      <a class="navbar-brand"
+         href="index.html"
+         data-i18n
+         data-en="Matvey Smirnov"
+         data-ru="Матвей Смирнов">
+        Matvey Smirnov
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="about.html"
+               data-i18n
+               data-en="About"
+               data-ru="Обо мне">
+              About
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"
+               href="projects.html"
+               data-i18n
+               data-en="Projects"
+               data-ru="Проекты">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="contact.html"
+               data-i18n
+               data-en="Contact"
+               data-ru="Контакты">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <button id="lang-toggle"
+                    class="btn btn-sm btn-outline-light ml-2"
+                    type="button">
+              RU
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
 
     <!-- Jumbotron -->
     <header class="jumbotron text-center mb-0">
-      <h1 class="display-4">Projects</h1>
-      <p class="lead">
+      <h1 class="display-4"
+          data-i18n
+          data-en="Projects"
+          data-ru="Проекты">
+        Projects
+      </h1>
+      <p class="lead"
+         data-i18n
+         data-en="A few things I have worked on so far as I learn backend development."
+         data-ru="Несколько вещей, над которыми я уже успел поработать, изучая backend‑разработку.">
         A few things I have worked on so far as I learn backend development.
       </p>
     </header>
@@ -46,69 +91,126 @@
     <!-- main -->
     <main class="container my-4">
       <section>
-        <h2 class="mb-4">Selected projects</h2>
+        <h2 class="mb-4"
+            data-i18n
+            data-en="Selected projects"
+            data-ru="Избранные проекты">
+          Selected projects
+        </h2>
 
         <div class="row">
-          <div class="row">
-  <!-- CS50 + CS50P -->
-  <div class="col-md-6 mb-3">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body d-flex flex-column">
-        <h3 class="card-title">CS50 & CS50P problem sets</h3>
-        <p class="card-text">
-          A collection of assignments from Harvard’s CS50x and CS50P where I learned
-          computer science fundamentals and Python programming.
-        </p>
-        <ul class="card-text">
-          <li>Languages: C, Python, SQL</li>
-          <li>Topics: algorithms, data structures, web basics, unit tests, file I/O</li>
-        </ul>
-        <div class="mt-auto">
-          <a href="https://github.com/me50/Rikkaampi1" class="card-link" target="_blank">
-            CS50 repository
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+          <!-- CS50 + CS50P -->
+          <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title"
+                    data-i18n
+                    data-en="CS50 & CS50P problem sets"
+                    data-ru="Задачи CS50 и CS50P">
+                  CS50 & CS50P problem sets
+                </h3>
+                <p class="card-text"
+                   data-i18n
+                   data-en="A collection of assignments from Harvard’s CS50x and CS50P where I learned computer science fundamentals and Python programming."
+                   data-ru="Набор заданий из курсов CS50x и CS50P, на которых я изучал основы информатики и программирование на Python.">
+                  A collection of assignments from Harvard’s CS50x and CS50P where I learned
+                  computer science fundamentals and Python programming.
+                </p>
+                <ul class="card-text">
+                  <li data-i18n
+                      data-en="Languages: C, Python, SQL"
+                      data-ru="Языки: C, Python, SQL">
+                    Languages: C, Python, SQL
+                  </li>
+                  <li data-i18n
+                      data-en="Topics: algorithms, data structures, web basics, unit tests, file I/O"
+                      data-ru="Темы: алгоритмы, структуры данных, основы веба, юнит‑тесты, работа с файлами">
+                    Topics: algorithms, data structures, web basics, unit tests, file I/O
+                  </li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="https://github.com/me50/Rikkaampi1" class="card-link" target="_blank">
+                    CS50 repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <!-- The site -->
-  <div class="col-md-6 mb-3">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body d-flex flex-column">
-        <h3 class="card-title">Personal homepage (this site)</h3>
-        <p class="card-text">
-          A simple personal homepage built for CS50 that serves as a business
-          card for potential employers.
-        </p>
-        <ul class="card-text">
-          <li>Tech: HTML, CSS, JavaScript, Bootstrap 4</li>
-          <li>Features: responsive layout, navigation, contact form with JS</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+          <!-- The site -->
+          <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title"
+                    data-i18n
+                    data-en="Personal homepage (this site)"
+                    data-ru="Личная страница (этот сайт)">
+                  Personal homepage (this site)
+                </h3>
+                <p class="card-text"
+                   data-i18n
+                   data-en="A simple personal homepage built for CS50 that serves as a business card for potential employers."
+                   data-ru="Простая личная страница, сделанная для курса CS50, служащая визиткой для потенциальных работодателей.">
+                  A simple personal homepage built for CS50 that serves as a business
+                  card for potential employers.
+                </p>
+                <ul class="card-text">
+                  <li data-i18n
+                      data-en="Tech: HTML, CSS, JavaScript, Bootstrap 4"
+                      data-ru="Технологии: HTML, CSS, JavaScript, Bootstrap 4">
+                    Tech: HTML, CSS, JavaScript, Bootstrap 4
+                  </li>
+                  <li data-i18n
+                      data-en="Features: responsive layout, navigation, contact form with JS"
+                      data-ru="Особенности: адаптивная верстка, удобная навигация, контактная форма на JS">
+                    Features: responsive layout, navigation, contact form with JS
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-  <!-- Future project -->
-  <div class="col-md-6 mb-3">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body d-flex flex-column">
-        <h3 class="card-title">Upcoming backend project</h3>
-        <p class="card-text">
-          I am currently learning backend development and plan to build a small
-          API or web app using Python and a SQL database.
-        </p>
-        <ul class="card-text">
-          <li>Planned: Python (Flask/FastAPI), PostgreSQL</li>
-          <li>Goal: deploy a small service that solves a real problem</li>
-        </ul>
-        <div class="mt-auto">
-          <span class="text-muted">Coming soon</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          <!-- Future project -->
+          <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title"
+                    data-i18n
+                    data-en="Upcoming backend project"
+                    data-ru="Планируемый backend‑проект">
+                  Upcoming backend project
+                </h3>
+                <p class="card-text"
+                   data-i18n
+                   data-en="I am currently learning backend development and plan to build a small API or web app using Python and a SQL database."
+                   data-ru="Сейчас я изучаю backend‑разработку и планирую сделать небольшой API или веб‑приложение на Python с базой данных SQL.">
+                  I am currently learning backend development and plan to build a small
+                  API or web app using Python and a SQL database.
+                </p>
+                <ul class="card-text">
+                  <li data-i18n
+                      data-en="Planned: Python (Flask/FastAPI), PostgreSQL"
+                      data-ru="Планируемые технологии: Python (Flask/FastAPI), PostgreSQL">
+                    Planned: Python (Flask/FastAPI), PostgreSQL
+                  </li>
+                  <li data-i18n
+                      data-en="Goal: deploy a small service that solves a real problem"
+                      data-ru="Цель: выложить небольшой сервис,решающий реальную задачу">
+                    Goal: deploy a small service that solves a real problem
+                  </li>
+                </ul>
+                <div class="mt-auto">
+                  <span class="text-muted"
+                        data-i18n
+                        data-en="Coming soon"
+                        data-ru="Скоро появится">
+                    Coming soon
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
